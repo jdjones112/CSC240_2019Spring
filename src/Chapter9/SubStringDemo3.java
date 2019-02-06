@@ -1,8 +1,7 @@
 package Chapter9;
 public class SubStringDemo3
 {
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         String str = "Four score and seven years ago";
         int first, last;
         first = str.indexOf('r');
@@ -19,14 +18,10 @@ public class SubStringDemo3
                 + "following locations.");
 
         position = str2.indexOf("and");
-        while (position != -1)
-        {
+        while (position != -1) {
             System.out.println(position);
             position = str2.indexOf("and", position + 1);
         }
-
     }
-
-
 }
 
