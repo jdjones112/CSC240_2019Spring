@@ -1,14 +1,12 @@
 package Chapter9;
 import java.net.*;
-import java.util.Scanner;
 import java.io.*;
-import java.nio.*;
 import java.nio.charset.Charset;
 import javax.swing.*;
 
 public class PokemonDataAPI {
 
-    public String getData(String id) {
+    public static String getData(String id) {
 
         /* download and save tmp.txt from a remote server
          load the data into number array */
@@ -49,10 +47,11 @@ public class PokemonDataAPI {
         is.close();
         os.close();
     }
-    public void displayImageFromURL(String URL) throws IOException
+
+    public static void displayImageFromURL(String URL) throws IOException
     {
         String destinationFile = "tmp.png";
-        this.saveImage(URL, destinationFile);
+        saveImage(URL, destinationFile);
         JFrame frame = new JFrame();
         ImageIcon icon = new ImageIcon("tmp.png");
         frame.add(new JLabel(icon));
