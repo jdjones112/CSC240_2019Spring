@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class PokemonViewer {
     public static void main(String[] args) throws IOException {
-        String ID = "5";
+        String ID = "777";
         String rawData = PokemonDataAPI.getData(ID);
         // Extract the name of the Pokemon
         // From the raw data.
@@ -15,8 +15,14 @@ public class PokemonViewer {
         String name = rawData.substring(startLocation, endLocation);
         System.out.println(name);
 
-        String URL = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png";
+        //String URL = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + ID + ".png";
+        //PokemonDataAPI.displayImageFromURL(URL);
+        int start = rawData.indexOf("front_shiny");
+        int end = rawData.indexOf("version_group");
+        String URL = rawData.substring(start+14, end-4);
+        System.out.println(URL);
         PokemonDataAPI.displayImageFromURL(URL);
+
     }
 
 }
