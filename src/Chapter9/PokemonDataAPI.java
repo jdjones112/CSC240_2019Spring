@@ -55,6 +55,7 @@ public class PokemonDataAPI {
         saveImage(URL, destinationFile);
         JFrame frame = new JFrame();
         ImageIcon icon = new ImageIcon("tmp.png");
+        frame.add(new JLabel(icon));
         frame.pack();
         frame.setVisible(true);
     }
