@@ -1,6 +1,6 @@
 # CSC240_2019Spring
 
 
-Review
+Review: https://github.com/quake0day/CSC240_2019Spring/tree/master/src/Review
 
-Chapter 9
+Chapter 9: https://github.com/quake0day/CSC240_2019Spring/tree/master/src/Chapter
