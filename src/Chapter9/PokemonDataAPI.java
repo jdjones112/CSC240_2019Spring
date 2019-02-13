@@ -6,6 +6,7 @@ import javax.swing.*;
 
 public class PokemonDataAPI {
 
+
     public static String getData(String id) {
 
         /* download and save tmp.txt from a remote server
@@ -54,8 +55,10 @@ public class PokemonDataAPI {
         saveImage(URL, destinationFile);
         JFrame frame = new JFrame();
         ImageIcon icon = new ImageIcon("tmp.png");
-        frame.add(new JLabel(icon));
         frame.pack();
         frame.setVisible(true);
     }
+
+
+
 }

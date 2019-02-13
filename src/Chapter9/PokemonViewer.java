@@ -16,7 +16,6 @@ public class PokemonViewer {
         System.out.println(name);
         String URLTest = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/1.png";
         PokemonDataAPI.displayImageFromURL(URLTest);
-
     }
 
 }
