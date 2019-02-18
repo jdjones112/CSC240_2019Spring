@@ -49,6 +49,31 @@ public class PokemonDataAPI {
         os.close();
     }
 
+    // get pokemon name from ID
+    public static String getPokemonName(String ID)
+    {
+        String rawData = getData(ID);
+        // Extract the name of the Pokemon
+        // From the raw data.
+        int startLocation = rawData.indexOf("\"name\":");
+        int endLocation = rawData.indexOf(",\"names");
+        startLocation = startLocation + 8;
+        endLocation = endLocation - 1;
+        String name = rawData.substring(startLocation, endLocation);
+        return name;
+    }
+
+    // get pokemon icon url from ID
+    // front shiny version
+    public static String getPokemonImageURL(String ID)
+    {
+        String rawData = getData(ID);
+        int start = rawData.indexOf("front_shiny");
+        int end = rawData.indexOf("version_group");
+        String URL = rawData.substring(start+14, end-4);
+        return URL;
+    }
+
     public static void displayImageFromURL(String URL) throws IOException
     {
         String destinationFile = "tmp.png";

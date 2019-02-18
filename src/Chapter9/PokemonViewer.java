@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class PokemonViewer {
     public static void main(String[] args) throws IOException {
-        String ID = "777";
+/*        String ID = "777";
         String rawData = PokemonDataAPI.getData(ID);
         // Extract the name of the Pokemon
         // From the raw data.
@@ -23,6 +23,10 @@ public class PokemonViewer {
         System.out.println(URL);
         PokemonDataAPI.displayImageFromURL(URL);
 
+        */
+
+        // updated to GUI version
+        PokemonViewerGUI pvg = new PokemonViewerGUI();
     }
 
 }
