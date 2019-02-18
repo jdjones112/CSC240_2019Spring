@@ -76,8 +76,7 @@ public class PokemonViewerGUI extends JFrame{
             ImageIcon icon = new ImageIcon(name+".png");
             nameLabel.setText(name);
             pokemonImage.setIcon(icon);
-            // refresh panel
-            panel.revalidate();
+
         }
     }
 
