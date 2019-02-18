@@ -12,6 +12,8 @@ public class PokemonDataAPI {
         /* download and save tmp.txt from a remote server
          load the data into number array */
         String data = "";
+        String result = "";
+
         try{
             URLConnection connection = new URL("https://pokeapi.co/api/v2/pokemon-form/" + id).openConnection();
             connection.setRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.95 Safari/537.11");
@@ -22,6 +24,7 @@ public class PokemonDataAPI {
             String line;
             while ((line = r.readLine()) != null) {
                 sb.append(line);
+                //result += line;
             }
             //System.out.println(sb.toString());
             data = sb.toString();

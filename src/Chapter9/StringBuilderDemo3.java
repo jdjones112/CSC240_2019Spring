@@ -8,6 +8,7 @@ public class StringBuilderDemo3 {
             System.out.println(str);
     // Delete the '0'.
             str.deleteCharAt(8);
+        System.out.println(str);
     // Delete "blue".
             str.delete(9, 13);
     // Display the StringBuilder object.
