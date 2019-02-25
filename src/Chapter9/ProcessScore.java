@@ -11,17 +11,38 @@ import java.net.URLConnection;
 
 public class ProcessScore {
 
-    public static void main(String[] args) throws IOException  {
+        public static void main(String[] args) throws IOException  {
 
 
-        String scoreData = getData(); // download student score file
-        System.out.println(scoreData); // output string
+            String scoreData = getData(); // download student score file
+            System.out.println(scoreData); // output string
 
-        // Your task
-        // calculate the total score of each student
-        // and output Name : total score
+            // Your task
+            // calculate the total score of each student
+            // and output Name : total score
 
-    }
+            // Step 1: Split the string
+            String[] students = scoreData.split("#");
+            for(int i = 1; i < students.length; i++)
+            {
+                //System.out.println(students[i]);
+                // student[1] = "ANNA,6,6,6,5,6,13,12,4,4.5,11,10,";
+                // scores[0] = "ANNA"
+                // scores[1] = "6"
+                // score[2] = "6"
+                //...
+                // How to cover student[1] ==> scores[]
+                String[] scores = students[i].split(",");
+                double summation = 0;
+                String firstName = scores[0];
+                for(int j = 1; j < scores.length; j++)
+                {
+                    summation += Double.parseDouble(scores[j]);
+                }
+                System.out.println(firstName + " : " + summation);
+            }
+
+        }
 
 
     public static String getData() throws IOException {
