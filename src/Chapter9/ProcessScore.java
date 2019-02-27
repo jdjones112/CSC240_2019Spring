@@ -37,6 +37,7 @@ public class ProcessScore {
                 String firstName = scores[0];
                 for(int j = 1; j < scores.length; j++)
                 {
+                    //System.out.println(scores[j]);
                     summation += Double.parseDouble(scores[j]);
                 }
                 System.out.println(firstName + " : " + summation);

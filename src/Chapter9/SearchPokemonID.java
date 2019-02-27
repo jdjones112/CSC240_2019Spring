@@ -13,12 +13,29 @@ public class SearchPokemonID {
 
     public static void main(String[] args) throws IOException {
 
-
+        Scanner keyboard = new Scanner(System.in);
+        System.out.print("Please input a word:");
+        String searchWord = keyboard.nextLine();
+        searchWord = "\"" + searchWord; // add extra " quotation marks at front
+        //System.out.println(searchWord);
         String[] pokemonName = getData(); // download pokemon name into an array
 
         // Please write a program, ask the user to enter a name or the first few characters of a name of the Pokemon to search for in the array.
         // The program should display all of the names that match the user’s input and their corresponding ID.
+        // e.g. User Input --> Mac
+        // Output:
+            // 66: "Machop"
+            // 67: "Machoke"
+            // 68: "Machamp"
+        // Your code goes here
+        for(int i = 0; i < pokemonName.length; i++)
+        {
 
+            if(pokemonName[i].startsWith(searchWord))
+            {
+                System.out.println(i + ":" + pokemonName[i]);
+            }
+        }
 
     }
 
