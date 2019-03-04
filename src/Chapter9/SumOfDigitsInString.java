@@ -8,12 +8,12 @@ public class SumOfDigitsInString {
         String userInput = keyboard.nextLine();
         char[] digits = userInput.toCharArray();
         int sum = 0;
-        int max = -9999;
-        int min = 9999;
+        int max = Integer.MIN_VALUE;
+        int min = Integer.MAX_VALUE;
         for(int i = 0; i < digits.length; i++)
         {
             // convert into int
-            //int number = digits[i] - '0';
+            ///int number = digits[i] - '0';
             int number = Integer.parseInt(String.valueOf(digits[i]));
             sum += number;
             if(number > max)
