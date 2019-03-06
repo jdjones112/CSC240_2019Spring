@@ -7,7 +7,7 @@ Chapter 9: https://github.com/quake0day/CSC240_2019Spring/tree/master/src/Chapte
 
 Chapter 10: https://github.com/quake0day/CSC240_2019Spring/tree/master/src/Chapter10
 <pre>
------------------
+
 
             | |                             
  _ __   ___ | | _____ _ __ ___   ___  _ __  
@@ -17,7 +17,7 @@ Chapter 10: https://github.com/quake0day/CSC240_2019Spring/tree/master/src/Chapt
 | |                                         
 |_|                                         
 
------------------
+
 </pre>
 **Pokemon Viewer**
 
