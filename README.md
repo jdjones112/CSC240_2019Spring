@@ -20,5 +20,7 @@ Chapter 10: https://github.com/quake0day/CSC240_2019Spring/tree/master/src/Chapt
 -----------------
 </pre>
 **Pokemon Viewer**
+
 ![Pokemon Viewer](https://i.v2ex.co/PeB5k2pj.png)
+
 https://github.com/quake0day/CSC240_2019Spring/tree/master/src/Chapter9/PokemonViewer
