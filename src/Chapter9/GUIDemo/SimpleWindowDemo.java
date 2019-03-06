@@ -1,4 +1,4 @@
-package Chapter9;
+package Chapter9.GUIDemo;
 
 public class SimpleWindowDemo
 {

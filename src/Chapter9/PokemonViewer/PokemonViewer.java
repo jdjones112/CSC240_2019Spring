@@ -1,4 +1,4 @@
-package Chapter9;
+package Chapter9.PokemonViewer;
 
 import java.io.IOException;
 

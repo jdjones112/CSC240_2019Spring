@@ -1,4 +1,4 @@
-package Chapter9;
+package Chapter9.GUIDemo;
 
 import javax.swing.*;   // Needed for Swing classes
 import java.awt.event.*; // Needed for ActionListener Interface

@@ -1,4 +1,4 @@
-package Chapter9;
+package Chapter9.PokemonViewer;
 import java.net.*;
 import java.io.*;
 import java.nio.charset.Charset;
