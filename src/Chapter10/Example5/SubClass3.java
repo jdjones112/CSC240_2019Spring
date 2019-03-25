@@ -3,8 +3,6 @@ package Chapter10.Example5;
 public class SubClass3 extends SuperClass3
 {
     /**
-     This method overrides one of the
-     superclass methods.
      @param arg An int.
      */
 
@@ -15,8 +13,6 @@ public class SubClass3 extends SuperClass3
     }
 
     /**
-     This method overloads the superclass
-     methods.
      @param arg A double.
      */
 
