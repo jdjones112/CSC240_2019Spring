@@ -1,14 +1,12 @@
-package Chapter10.Example1;
+package Chapter10.Example11;
 
 /**
- The GradedActivity class stores data about a graded
- activity for the Analyzable Interface programming
- challenge.
+ A class that holds a grade for a graded activity.
  */
 
 public class GradedActivity
 {
-    public double score;  // Numeric score
+    private double score;  // Numeric score
 
     /**
      The setScore method sets the score field.

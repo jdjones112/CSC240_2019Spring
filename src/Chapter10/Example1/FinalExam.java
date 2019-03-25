@@ -17,7 +17,7 @@ public class FinalExam extends GradedActivity
      exam and the number of questions missed.
      @param questions The number of questions.
      @param missed The number of questions missed.
-     */
+        */
 
     public FinalExam(int questions, int missed)
     {
@@ -34,6 +34,8 @@ public class FinalExam extends GradedActivity
 
         // Call the inherited setScore method to
         // set the numeric score.
+        //score = numericScore;
+
         setScore(numericScore);
     }
 
