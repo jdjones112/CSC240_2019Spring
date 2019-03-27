@@ -1,4 +1,4 @@
-package Chapter10.Example11;
+package Chapter10.Example12;
 
 /**
  This program demonstrates the FinalExam3 class which

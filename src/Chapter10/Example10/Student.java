@@ -9,6 +9,16 @@ package Chapter10.Example10;
 
 public abstract class Student
 {
+    public String toString()
+    {
+        String str;
+
+        str = "Name: " + name
+                + "\nID Number: " + idNumber
+                + "\nYear Admitted: " + yearAdmitted;
+        return str;
+    }
+
     private String name;       // Student name
     private String idNumber;   // Student ID
     private int yearAdmitted;  // Year admitted
@@ -27,22 +37,11 @@ public abstract class Student
         idNumber = id;
         yearAdmitted = year;
     }
-
     /**
      The toString method returns a String containing
      the student's data.
      @return A reference to a String.
      */
-
-    public String toString()
-    {
-        String str;
-
-        str = "Name: " + name
-                + "\nID Number: " + idNumber
-                + "\nYear Admitted: " + yearAdmitted;
-        return str;
-    }
 
     /**
      The getRemainingHours method is abstract.

@@ -1,9 +1,12 @@
 package Chapter10.Example9;
 
+import java.util.Scanner;
+
 public class Example {
     public static void main(final String[] args) {
-        Shape myShape = new Square(8);
-        myShape.show();
+        //Shape myShape = new Square(8);
+        //myShape.show();
+        Square s1 = new Square(8);
     }
 }
 

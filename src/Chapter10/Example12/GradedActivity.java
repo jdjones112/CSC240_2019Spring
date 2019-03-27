@@ -1,4 +1,4 @@
-package Chapter10.Example11;
+package Chapter10.Example12;
 
 /**
  A class that holds a grade for a graded activity.

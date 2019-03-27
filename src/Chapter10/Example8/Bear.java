@@ -6,4 +6,9 @@ public class Bear extends Animal{
     {
         return "Growl!";
     }
+
+    public String attack()
+    {
+        return "Bear attack!!!";
+    }
 }

@@ -1,4 +1,4 @@
-package Chapter10.Example11;
+package Chapter10.Example12;
 
 /**
  This class determines the grade for a final exam.

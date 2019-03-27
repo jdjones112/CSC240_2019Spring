@@ -1,4 +1,4 @@
-package Chapter10.Example11;
+package Chapter10.Example12;
 /**
  Relatable interface
  */
@@ -8,3 +8,4 @@ public interface Relatable
     boolean isGreater(GradedActivity g);
     boolean isLess(GradedActivity g);
 }
+
