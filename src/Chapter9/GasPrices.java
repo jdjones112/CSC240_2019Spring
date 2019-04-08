@@ -13,8 +13,29 @@ public class GasPrices {
 
 
         String[] gasData = getData(); // download gas price into an array
+        double average = AveragePrice("18", 2, gasData);
+        System.out.println(average);
 
+    }
 
+    public static double AveragePrice(String year, int column, String[] gasData)
+    {
+        double averagePrice = 0.0;
+        double totalPrice = 0.0;
+        int count = 0;
+        for(int i = 1; i < gasData.length; i++)
+        {
+            //System.out.println(data[i]);
+            String[] data = gasData[i].split(",");
+            if(data[0].endsWith(year)); // date
+            {
+                totalPrice += Double.parseDouble(data[column]); // Albany price
+                count ++;
+            }
+
+        }
+        averagePrice = totalPrice / count;
+        return averagePrice;
     }
 
 

@@ -18,6 +18,9 @@ public class Demo
                 return number * number;
             }};
 
+
+
+
         // Get a number from the user.
         System.out.print("Enter an integer number: ");
         num = keyboard.nextInt();

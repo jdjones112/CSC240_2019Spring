@@ -42,6 +42,6 @@ public class Demo
 
     private static void showPrice(RetailItem item)
     {
-        System.out.printf("Price: $%,.2f\n", item.getRetailPrice());
+        System.out.printf("Price: $" + item.getRetailPrice() + "\n");
     }
 }
