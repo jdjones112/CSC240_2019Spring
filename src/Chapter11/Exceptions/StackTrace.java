@@ -1,4 +1,4 @@
-package Chapter11;
+package Chapter11.Exceptions;
 
 /**
  This program demonstrates the stack trace that is

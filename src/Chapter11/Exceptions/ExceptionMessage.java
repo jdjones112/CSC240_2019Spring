@@ -1,4 +1,4 @@
-package Chapter11;
+package Chapter11.Exceptions;
 
 import java.io.*;               // For file I/O classes
 import java.util.Scanner;       // For the Scanner class
