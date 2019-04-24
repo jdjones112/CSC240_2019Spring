@@ -17,7 +17,7 @@ public class PokemonDemo {
         ObjectInputStream in = new ObjectInputStream(file2);
 
         Pokemon p2;
-        
+
         p2 = (Pokemon) in.readObject();
         System.out.println(p2.HP);
         System.out.println(p2.level);
