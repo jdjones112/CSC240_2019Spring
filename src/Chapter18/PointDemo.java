@@ -21,9 +21,4 @@ public class PointDemo {
         System.out.println(cp1.getY());
 
     }
-
-    void displayPoint(Point<? extends Number> myPoint)
-    {
-
-    }
 }

@@ -9,7 +9,6 @@ public class Example1 {
         cars.add("BMW");
         System.out.println(cars.get(0));
 
-
         ArrayList newCars = new ArrayList();
         Point randomPoint = new Point("xx", 123);
     }

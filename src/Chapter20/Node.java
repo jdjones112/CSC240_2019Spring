@@ -6,5 +6,4 @@ public class Node <T>
     Node next;
 
     public Node(T d) {data = d;}
-
 }
