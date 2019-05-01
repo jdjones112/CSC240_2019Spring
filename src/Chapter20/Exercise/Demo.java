@@ -14,6 +14,12 @@ public class Demo {
         a.next = b;
         b.next = c;
         c.next = d;
+
+        // Insert Node (102) between b and c
+        // create a new node e --> e(102)
+        Node<Integer> e = new Node<>(102);
+        b.next = e;
+        e.next = c;
         Node head = list.head;
         while(head != null)
         {
