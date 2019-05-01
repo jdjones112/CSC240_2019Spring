@@ -20,12 +20,18 @@ public class Demo {
         Node<Integer> e = new Node<>(102);
         b.next = e;
         e.next = c;
-        Node head = list.head;
-        while(head != null)
-        {
-            System.out.println(head.data);
-            head = head.next;
-        }
+
+
+        list.head = list.head.next; // remove node a
+
+
+
+        // delete node e
+        b.next = c;
+
+        System.out.println(list);
+
+
 //
 //        System.out.println(list.head.data);
 //        System.out.println(list.head.next.data);
