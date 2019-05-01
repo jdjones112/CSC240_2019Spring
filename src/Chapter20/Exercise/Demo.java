@@ -30,7 +30,10 @@ public class Demo {
         b.next = c;
 
         System.out.println(list);
-
+        System.out.println(list.size());
+        Node<Integer> f= new Node<>(9999);
+        list.append(f);
+        System.out.println(list);
 
 //
 //        System.out.println(list.head.data);
